@@ -1,8 +1,15 @@
-# TranslationRepo
-This repo is basically handle the CRUD operation of Translation module.
+This repository handles the CRUD operations for the Translation module.
+**Setup Instructions**
+  Install MariaDB: Set up MariaDB on your local machine and create a database named translation_db.
+  Run the Application: You can run the application with the following command:
 
-also you need to setup mariadb in your local and create a database translation_db
+**Authentication**
+When you directly hit the endpoint, you might encounter an "Unauthorized" error. To authenticate the user, use the following curl command to log in first:
 
-after this you can simply run this application by command 
-**mvn springboot:run 
-and you can test the application 
+curl --location 'http://localhost:8080/api/auth/login' \
+--header 'Content-Type: application/json' \
+--data '{"username": "translation_app", "password": "123"}'
+
+This end ponit give you the token. by using that token you can hit api's for know token expiry time is approximately 1 day but you can adjust according to your need.
+
+    
