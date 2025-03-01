@@ -1,2 +1,2 @@
 # TranslationRepo
-This repo is basically handle the CRUD operation of Translation module
+This repo is basically handle the CRUD operation of Translation module.
