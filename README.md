@@ -12,4 +12,4 @@ curl --location 'http://localhost:8080/api/auth/login' \
 
 This end ponit give you the token. by using that token you can hit api's for know token expiry time is approximately 1 day but you can adjust according to your need.
 
-    
+I have done as much code coverage as I could in given time, which is not 90 percent, but the remaining functionality is working.
